@@ -54,7 +54,7 @@ def printb():
         line = board[i]
         for j in range(len(line)):
             color = get_color(line[j])
-            value = f"{line[j]}"
+            value = f"{line[j]}" if line[j] > 0 else "."
             print(f"{color}{value:<4}", end=" ")
         print()
 
